@@ -1,0 +1,4 @@
+
+Changes with lua-resty-snappy 1.0                                   1 Oct 2014
+
+    *) Feature: LuaRocks Support via MoonRocks.
