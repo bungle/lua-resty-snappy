@@ -11,7 +11,7 @@ Just place [`snappy.lua`](https://github.com/bungle/lua-resty-snappy/blob/master
 
 1. Install snappy with your operating system's package management OR build it manually from the sources provided from
    [Snappy repository](https://code.google.com/p/snappy/).
-2. Check that you have `snappy.so` (or .dylib, or .dll) in Lua's `package.cpath` (or modify `snappy.lua` and point `ffi_load("snappy")`
+2. Check that you have `snappy.so` (or `.dylib`, or `.dll`) in Lua's `package.cpath` (or modify `snappy.lua` and point `ffi_load("snappy")`
    with full path to `snappy.so`, e.g. `local json = ffi_load("/usr/local/lib/lua/5.1/snappy.so")`).
 
 ### Using LuaRocks or MoonRocks
