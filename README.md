@@ -38,12 +38,12 @@ MoonRocks repository for `lua-resty-snappy`  is located here: https://rocks.moon
 #### Error Codes
 
 ```c
-  SNAPPY_OK               = 0,
-  SNAPPY_INVALID_INPUT    = 1,
+  SNAPPY_OK               = 0
+  SNAPPY_INVALID_INPUT    = 1
   SNAPPY_BUFFER_TOO_SMALL = 2
 ```
 
-#### string,len snappy.compress(input)
+#### string, len snappy.compress(input)
 
 Compresses `input` with Snappy algorithm, and returns compressed data and its length.
 On error this will return nil and an error code.
@@ -65,7 +65,7 @@ else
 end
 ```
 
-#### string,len snappy.uncompress(compressed)
+#### string, len snappy.uncompress(compressed)
 
 Uncompresses `compressed` with Snappy algorithm, and returns uncompressed data and its length.
 On error this will return nil and an error code.
