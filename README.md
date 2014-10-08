@@ -118,7 +118,7 @@ local bool   = snappy.validate_compressed_buffer(snappy.compress("test"))
 
 ## License
 
-`lua-resty-libcjson` uses two clause BSD license.
+`lua-resty-snappy` uses two clause BSD license.
 
 ```
 Copyright (c) 2014, Aapo Talvensaari
