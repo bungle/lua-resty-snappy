@@ -11,7 +11,7 @@ Just place [`snappy.lua`](https://github.com/bungle/lua-resty-snappy/blob/master
 
 1. Install snappy with your operating system's package management OR build it manually from the sources provided from
    [Snappy repository](https://code.google.com/p/snappy/).
-2. Check that you have `snappy.so` (or .dylib, or .dll) in Lua's `package.cpath` (or modify `snappy.lua` and point `ffi_load("snappy")`
+2. Check that you have `snappy.so` (or `.dylib`, or `.dll`) somewhere in the default search path for dynamic libraries of your operating system (or modify `snappy.lua` and point `ffi_load("snappy")`
    with full path to `snappy.so`, e.g. `local json = ffi_load("/usr/local/lib/lua/5.1/snappy.so")`).
 
 ### Using LuaRocks or MoonRocks
@@ -38,12 +38,12 @@ MoonRocks repository for `lua-resty-snappy`  is located here: https://rocks.moon
 #### Error Codes
 
 ```c
-  SNAPPY_OK               = 0,
-  SNAPPY_INVALID_INPUT    = 1,
+  SNAPPY_OK               = 0
+  SNAPPY_INVALID_INPUT    = 1
   SNAPPY_BUFFER_TOO_SMALL = 2
 ```
 
-#### string,len snappy.compress(input)
+#### string, len snappy.compress(input)
 
 Compresses `input` with Snappy algorithm, and returns compressed data and its length.
 On error this will return nil and an error code.
@@ -65,7 +65,7 @@ else
 end
 ```
 
-#### string,len snappy.uncompress(compressed)
+#### string, len snappy.uncompress(compressed)
 
 Uncompresses `compressed` with Snappy algorithm, and returns uncompressed data and its length.
 On error this will return nil and an error code.
@@ -118,7 +118,7 @@ local bool   = snappy.validate_compressed_buffer(snappy.compress("test"))
 
 ## License
 
-`lua-resty-libcjson` uses two clause BSD license.
+`lua-resty-snappy` uses two clause BSD license.
 
 ```
 Copyright (c) 2014, Aapo Talvensaari
